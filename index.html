@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <section class="bg1">
+    <section class="bg2">
+      <section class="content">
+        <section class="learn">
+          <div class="text">
+            <h1>Learn to code by watching others</h1>
+            <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+              but understanding how developers think is invaluable. </p>
+          </div>
+        </section>
+      
+        <section class="form">
+         <div class="trial"><b>Try it free 7 days</b> then $20/mo. thereafter</div>
+          <div class="form">
+            <form>
+              <div class="form-wraper">
+                <input type="text" placeholder="First Name ">
+                <p class="erro-text"></p>
+              </div>
+              <div class="form-wraper">
+                <input type="text" placeholder="Last Name ">
+                <p class="erro-text"></p>
+              </div>
+              <div class="form-wraper">
+                <input type="email" placeholder="Email Address ">
+                <p class="erro-text"></p>
+              </div>  
+              <div class="form-wraper">
+                <input type="password" placeholder="Password ">
+                <p class="erro-text"></p>
+              </div>
+              
+            
+              <div class="form-btn">
+                <input type="submit" value="Claim your free trial ">
+              </div>
+              
+            </form>
+            <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p> 
+          </div>
+        </section>
+    
+      </section>
+      
+<!--      <footer>
+        <p class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="#">Your Name Here</a>.
+        </p>
+      </footer>-->
+    </section>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script>
+    $(function(){
+
+
+      $('.form-btn input[type=submit]').click(function(){
+        return false;
+      });
+      
+      $('.form-btn input[type=submit]').click(function(el){
+        var el1 = $('div.form-wraper:nth-of-type(1) input').val();
+        var el2 = $('div.form-wraper:nth-of-type(2) input').val();
+        var el3 = $('div.form-wraper:nth-of-type(3) input').val();
+        var el4 = $('div.form-wraper:nth-of-type(4) input').val();
+
+        if(el1 == ''){
+          $('div.form-wraper:nth-of-type(1) p.erro-text').text('Hello world!');
+          $('section.form div.form').css('height','470px');
+          
+        }else if(el2 == ''){
+          $('div.form-wraper:nth-of-type(2) p.erro-text').text('Hello world!');
+          $('section.form div.form').css('height','470px');
+        }else if(el3 == ''){
+          $('div.form-wraper:nth-of-type(3) p.erro-text').text('Hello world!');
+          $('section.form div.form').css('height','470px');
+        }else if(el4 == ''){
+          $('div.form-wraper:nth-of-type(4) p.erro-text').text('Hello world!');
+          $('section.form div.form').css('height','470px');
+        }
+        
+      })
+
+
+    })
+  </script>
+
+</body>
+</html>

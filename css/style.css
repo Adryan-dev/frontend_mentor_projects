@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    color: white;
+}
+
+html,body {
+    height: 100%;
+}
+
+body {
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+section.bg1 {
+    width: 100%;
+    height: 100vh;
+    z-index: 3;
+    background: hsl(0, 100%, 74%);
+} 
+
+section.bg1 {
+    background-image: url('../images/bg-intro-desktop.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+}
+
+section.content {
+    width: 100%;
+}
+
+section.learn {
+    float: left;
+    width: 48%;
+    margin: 0 1%;
+    color: white;
+}
+
+section.learn .text {
+    position: relative;
+    top: 350px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+}
+
+section.learn h1 {
+    font-weight: 700;
+    font-size: 45px;
+    padding: 0;
+    margin: 0;
+}
+
+section.form {
+    float: right;
+    width: 48%;
+    margin: 0 1%;
+    position: relative;
+    top: 150px;
+}
+
+section.form div.trial{
+    height: 45px;
+    width: 100%;
+    line-height: 45px;
+    border-radius: 10px;
+    max-width: 500px;
+    text-align: center;
+    background: hsl(248, 32%, 49%);
+
+}
+
+section.form div.form {
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 2%;
+    background: white;
+    width: 100%;
+    max-width: 500px;
+    height: 400px;
+}
+
+section.form div.form form input {
+    height: 40px;
+    width: 100%;
+    margin: 2% 0;
+    border: 1px solid hsl(246, 25%, 77%);
+    border-radius: 8px;
+    padding: 0 2%;
+    font-weight: 500;
+    outline: 0;
+    color: #333;
+}
+
+section.form div.form form .form-btn input {
+    height: 50px;
+    background: hsl(154, 59%, 51%);
+    border: 0;
+    cursor: pointer;
+    color: white;
+}
+
+section.form div.form >  p {
+    font-size: 13px;
+    max-width: 450px;
+    position: absolute;
+    left: 40px;
+    bottom: 50px;
+    display: block;
+    color: hsl(246, 25%, 77%);
+    text-align: center;
+    margin: 0 auto;
+}
+
+section.form div.form p > span {
+    color: hsl(0, 100%, 74%);
+}
+
+section.form div.form > form p {
+    color: hsl(0, 100%, 74%);
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1100px){
+    section.learn {
+        width: 100%;
+        top:0px;
+    }
+    section.learn .text {
+        top: 100px;
+        margin: 0 auto;
+        width: 100%;
+    }
+    section.form {
+        margin: 0 auto;
+        float: right;
+        width: 100%;
+        position: relative;
+        top: 150px;
+    }
+    section.form .form,section.form div.trial,section.form div.form  p {
+        margin: 0 auto;
+    }
+    section.form div.form  p {
+        position: relative;
+        top: 10px;
+        left: 0;
+    }
+}
