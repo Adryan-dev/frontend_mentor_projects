@@ -1,2 +1,2 @@
-# frontend_mentor_projects
+# Frontend mentor projects 
 I created this project of frontend mentor
